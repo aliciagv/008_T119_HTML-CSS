@@ -1,0 +1,89 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25-oct-2017, 20:15:15
+    Author     : cice
+*/
+/* RESET */
+* {
+    padding: 0; /*dentro de la caja se dispersen un poco más*/
+    margin: 0; /*margen entre contenedores*/
+    box-sizing: border-box; /*se va al borde de la caja */
+ 
+}
+body {
+    font-family: 'Open Sans',sans-serif; /*utiliza la familia sans y si no tienes sans-serif*/
+}
+
+a{
+    text-decoration:none; /* no aparece subrayado */
+}
+/*FIN DEL RESET*/
+
+/*CABECERA*/
+header {
+    background-color: #FF8384;
+    height: 300px; /*altura*/
+    width: 100%;
+    text-align: center; /*alinear el texto de manera horizontal*/
+    display: table;
+}
+
+header div { /*concatenando las etiquetas*/
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header div h1 {
+    color: #FFF; /*FFF blanco puro, FFF es abreviado FFFFFF ... 000 negro puro*/
+    font-weight: 300; /*grosor de la fuente del 100 al 800. weight normal suele ser 400*/
+    font-size:3em;
+    
+    
+}
+
+header div h3 {
+    font-weight: 300;
+    color: rgba(0,0,0,.7); /*.7 opacidad*/ 
+    
+}
+
+span {
+    color: #BC4545;
+    
+}
+
+/*MENU*/
+
+nav{
+    text-align: center;
+    
+}
+nav ul {
+    border-bottom: 2px rgba(0,0,0,.45) solid;
+}
+
+nav ul li {
+    display: inline-block; /*organización en línea */
+    margin: 20px;
+}
+nav ul li a {
+    display: block; 
+    /*margin: 12px;*/
+    color: #BC4545;
+    /*border: 1px rgba(0,0,0,.1) solid;*/
+    transition: all .5s;
+    
+    
+}
+/*el ratón se coloca encima 
+seudo elemento :hover el ratón por encima*/
+
+nav ul li a:hover {
+    color: #000;
+    transform: scale(1.2);
+    
+}
