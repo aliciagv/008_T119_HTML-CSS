@@ -16,27 +16,29 @@ $('#caja').val()
         <meta charset="UTF-8"> <!-- metadatos, codificación -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link href="css/estilo.css" rel="stylesheet" type="text/css"/>
+        <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     </head>
     <body>
         <header> <!-- cabecera --> 
             <div>
-                <h1>Web <span>JAVA</span></h1> <!-- Encabezado de nivel 1  span para dar énfasis-->
+                <h1 class="result">Web <span>JAVA</span></h1> <!-- Encabezado de nivel 1  span para dar énfasis-->
                 <h3>by acilia</h3>
             </div>
         </header>
         <nav> <!--Etiqueta de navegación, puede ir dentro o fuera del header -->     
             <ul> <!--unorder list -->
                 <li> <!--list item -->
-                <a href="#home">Inicio</a> <!-- a Enlace #home se define como ancla -->
+                    <a href="#home">Inicio</a> <!-- a Enlace #home se define como ancla -->
                 </li>
                 <li> <!--list item -->
-                <a href="#works">Trabajos</a> <!-- #works se define como ancla -->
+                    <a href="#works">Trabajos</a> <!-- #works se define como ancla -->
                 </li>
                 <li> <!--list item -->
-                <a href="#services">Servicios</a> <!-- #home se define como ancla -->
+                    <a href="#services">Servicios</a> <!-- #home se define como ancla -->
                 </li>
                 <li> <!--list item -->
-                <a href="#contact">Contacto</a> <!-- #home se define como ancla -->
+                    <a href="#contact">Contacto</a> <!-- #home se define como ancla -->
                 </li>
             </ul>
         </nav> 
@@ -118,6 +120,15 @@ $('#caja').val()
                 </div>
             </section>
         </main>
-        
+        <script>
+            $(".result").hover(
+                    function () {
+                        $(this).addClass("animated shake");
+                    },
+                    function () {
+                        $(this).removeClass("animated shake");
+                    }
+            );
+        </script> <!-- -->
     </body>
 </html>

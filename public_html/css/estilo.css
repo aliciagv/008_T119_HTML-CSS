@@ -63,12 +63,13 @@ nav{
     
 }
 nav ul {
-    border-bottom: 2px rgba(0,0,0,.45) solid;
+    border-bottom: 2px rgba(0,0,0,.15) solid;
 }
 
 nav ul li {
     display: inline-block; /*organización en línea */
-    margin: 20px;
+    padding:  20px;
+    border-bottom: 3px rgba(0,0,0,0) solid;
 }
 nav ul li a {
     display: block; 
@@ -81,9 +82,13 @@ nav ul li a {
 }
 /*el ratón se coloca encima 
 seudo elemento :hover el ratón por encima*/
+nav ul li:hover {
+    border-bottom: 3px #BC4545 solid;
+}
 
 nav ul li a:hover {
     color: #000;
     transform: scale(1.2);
     
 }
+
